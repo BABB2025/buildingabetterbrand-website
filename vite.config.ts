@@ -16,7 +16,6 @@ function figmaAssetPlugin(): Plugin {
     },
     load(id) {
       if (id.startsWith('\0figma-asset:')) {
-        // Return a module that exports a transparent 1x1 PNG placeholder
         const placeholder = 'data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAQAAAC1HAwCAAAAC0lEQVR42mNkYAAAAAYAAjCB0C8AAAAASUVORK5CYII='
         return 'export default "' + placeholder + '"'
       }
@@ -24,7 +23,6 @@ function figmaAssetPlugin(): Plugin {
   }
 }
 
-// https://vitejs.dev/config/
 export default defineConfig({
   plugins: [react(), tailwindcss(), figmaAssetPlugin()],
   build: {
