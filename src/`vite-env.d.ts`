@@ -1,0 +1,68 @@
+```typescript
+/// <reference types="vite/client" />
+
+// Declare module for Figma assets
+declare module 'figma:asset/*' {
+  const content: string;
+  export default content;
+}
+
+// Declare module for versioned packages
+declare module 'sonner@*' {
+  export * from 'sonner';
+}
+
+declare module 'motion/react' {
+  export * from 'framer-motion';
+}
+
+declare module 'lucide-react@*' {
+  export * from 'lucide-react';
+}
+
+declare module '@radix-ui/@' {
+  const content: any;
+  export = content;
+}
+
+declare module 'cmdk@*' {
+  export * from 'cmdk';
+}
+
+declare module 'embla-carousel-react@*' {
+  export * from 'embla-carousel-react';
+}
+
+declare module 'input-otp@*' {
+  export * from 'input-otp';
+}
+
+declare module 'react-day-picker@*' {
+  export * from 'react-day-picker';
+}
+
+declare module 'recharts@*' {
+  export * from 'recharts';
+}
+
+declare module 'vaul@*' {
+  export * from 'vaul';
+}
+
+declare module 'class-variance-authority@*' {
+  export * from 'class-variance-authority';
+}
+
+declare module '@radix-ui/react-slot@*' {
+  export * from '@radix-ui/react-slot';
+}
+
+declare module 'react-resizable-panels@*' {
+  export * from 'react-resizable-panels';
+}
+
+declare module 'next-themes@*' {
+  const content: any;
+  export = content;
+}
+```
